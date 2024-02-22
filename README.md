@@ -1,4 +1,5 @@
 MAIN SCENARIO
+
 In this project, it is requested to develop a transportation database model in which different
 transportation alternatives for a country (sea, air, road, mobile transportation, metro, etc.) are
 recorded at macro and micro levels. In this system, transportation will be provided with a unique card
@@ -11,13 +12,13 @@ evaluation and the originality of your design is crucial.
 ANALYSIS
 Examine the websites below and write the data requirements for
 each website that fit the main scenario above.
-https://www.turkishairlines.com/
-https://www.tcddtasimacilik.gov.tr/seferler/yuksek-hizli-tren?date=2022-09-18
-https://www.marti.tech/
-https://www.obilet.com/
-https://www.ido.com.tr/
-https://www.izban.com.tr/Sayfalar/Anasayfa.aspx
-https://yolcu360.com/
+https://www.turkishairlines.com/ ,
+https://www.tcddtasimacilik.gov.tr/seferler/yuksek-hizli-tren?date=2022-09-18 , 
+https://www.marti.tech/ , 
+https://www.obilet.com/ , 
+https://www.ido.com.tr/ , 
+https://www.izban.com.tr/Sayfalar/Anasayfa.aspx , 
+https://yolcu360.com/ 
 
 
 DESIGN-CONCEPTUAL DESIGN
