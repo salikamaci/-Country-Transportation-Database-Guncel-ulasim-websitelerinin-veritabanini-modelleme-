@@ -1,0 +1,25 @@
+a.    BILL_TAG(Amount, RideType, ServiceID, DriverID)
+a.    RIDE(DropoffLocation, PickupLocation, RideType, ServiceID, DriverID, Ceza, Arr_date, Dep_date)
+c.    CAR(Plaka, SeatNO, Model, Type, DriverID) //DRIVES
+b.    BILL_SCOOTER(Amount, ScooterID, ParkPhoto) //ENDS_RENT
+a.    SCOOTER(ScooterID, BataryaYuzdesi, ScooterLocation, ServiceID) // ORDER
+d.    SEAT(seat_no, YolculukNO, LegNo)
+d.    DRIVER(DriverID, Puan, Name, EhliyetNO)
+b.    TAGSELECTION(KMUcreti, AcilisUcreti, Mesafe, ServiceID
+a.    SCOOTERSELECTION(DKUcreti, SurusSuresi, KM_Ucreti, AcilisUcreti, Mesafe, ServiceID)
+b.    VEHICLE(VehicleID, VehicleType, TotalNoofSeats, Izban, Feribot, Airplane, Otobus, Tren)
+a.    DURAK(DurakID, City, Name, Airport, Liman, IzbanIstasyonu, TrenIstasyonu, Otogar)
+d.    YOLCULUK_LEG(LegNo, dep_date, NoofAvailableSeats, arr_date, YolculukNO, DurakID, Arr_Time, Dep_Time, VehicleID) // ASSIGNED
+a.    TICKET_LEG(BiletSinifi, KalkisYeri, VarisYeri, KullanilanArac, ServiceID, YolculukNO, arr_date, dep_date) //FOR
+b.    RESERVATION(ReservationID, TeslimVerisYeri, TeslimAlisYeri, RezervasyonBaslangicTarihi, RezervasyonBitisTarihi, GunSayisi, ServiceID, RentedVehicleID) //CHOOSE
+d.    BILL_RENT(Amount, ReservationID)
+c.    BILL_TICKET(Amount, YolculukNO)
+g.    RENTEDVEHICLE(RentedVehicleID, km_limit, plaka, AracTipi, DepozitoUcreti, Model, GunlukUcret)
+e.    CAR_RENT(ServiceID, MusteriEhliyet)
+b.    YOLCULUK(YolculukNO, SeferTipi, KullanilanSite)
+a.    TICKETBASED(RefundFlag, ServiceID)
+c.    MARTI(KMUcreti, AcilisUcreti, Mesafe, ServiceID)
+a.    CUSTOMER(CustomerID, PhoneNumber, BirthDate, Name, Balance, Preference) // USE
+c.    PREVIOUS_TRIPS(City, ServiceID) // HAS
+b.    PAYMENT(Amount, ServiceID, CustomerID) // CONFIRM
+b.    SERVICE(ServiceID, CustomerID, Gidis_tarihi, GenelVarisYeri, GenelKalkisYeri)
